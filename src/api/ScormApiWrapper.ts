@@ -1,5 +1,5 @@
 /* eslint-disable default-case */
-class ScormApiWrapper {
+class Scorm {
   /**
    * The API (SCORM 1.2) or API_1484_11 (SCORM 2004) object which contains the SCORM Runtime API.
    */
@@ -637,4 +637,4 @@ class ScormApiWrapper {
   }
 }
 
-export default ScormApiWrapper
+export default Scorm

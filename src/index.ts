@@ -1,3 +1,2 @@
-import ScormApiWrapper from './scorm-api'
-
-export const api = new ScormApiWrapper(true)
+export * from './api'
+export * from './utils'

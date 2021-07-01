@@ -1,6 +1,6 @@
 {
   "name": "@21epub/scorm-ts-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -10,12 +10,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
+    "build": "typedoc && rm -rf dist && rollup -c",
     "release": "npm version patch && npm run build && npm publish"
   },
-  "dependencies": {
+  "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "@umijs/fabric": "^2.6.2",
-    "rollup": "^2.52.3"
+    "rollup": "^2.52.3",
+    "typedoc": "^0.21.2"
   }
 }
