@@ -1,0 +1,868 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ScormApiWrapper | @21epub/scorm-ts-api</title>
+	<meta name="description" content="Documentation for @21epub/scorm-ts-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@21epub/scorm-ts-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@21epub/scorm-ts-api</a>
+				</li>
+				<li>
+					<a href="scormapiwrapper.html">ScormApiWrapper</a>
+				</li>
+			</ul>
+			<h1>Class ScormApiWrapper</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ScormApiWrapper</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="scormapiwrapper.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#apihandle" class="tsd-kind-icon">api<wbr>Handle</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#apiisfound" class="tsd-kind-icon">api<wbr>IsFound</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#connectionisactive" class="tsd-kind-icon">connection<wbr>IsActive</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#datacompletionstatus" class="tsd-kind-icon">data<wbr>Completion<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#dataexitstatus" class="tsd-kind-icon">data<wbr>Exit<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#debugmodeenabled" class="tsd-kind-icon">debug<wbr>Mode<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#handlecompletionstatus" class="tsd-kind-icon">handle<wbr>Completion<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="scormapiwrapper.html#handleexitmode" class="tsd-kind-icon">handle<wbr>Exit<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="scormapiwrapper.html#scormversion" class="tsd-kind-icon">scorm<wbr>Version</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#dataget" class="tsd-kind-icon">data<wbr>Get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#dataset" class="tsd-kind-icon">data<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#findapi" class="tsd-kind-icon">find<wbr>Api</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getapi" class="tsd-kind-icon">get<wbr>Api</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getapihandle" class="tsd-kind-icon">get<wbr>Api<wbr>Handle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getcode" class="tsd-kind-icon">get<wbr>Code</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getdiagnosticinfo" class="tsd-kind-icon">get<wbr>Diagnostic<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getinfo" class="tsd-kind-icon">get<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#getstatus" class="tsd-kind-icon">get<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#isavailable" class="tsd-kind-icon">is<wbr>Available</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#save" class="tsd-kind-icon">save</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#setstatus" class="tsd-kind-icon">set<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#stringtoboolean" class="tsd-kind-icon">string<wbr>ToBoolean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#terminate" class="tsd-kind-icon">terminate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="scormapiwrapper.html#trace" class="tsd-kind-icon">trace</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Scorm<wbr>Api<wbr>Wrapper<span class="tsd-signature-symbol">(</span>debug<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="scormapiwrapper.html" class="tsd-signature-type" data-tsd-kind="Class">ScormApiWrapper</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L46">api/ScormApiWrapper.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>debug: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="scormapiwrapper.html" class="tsd-signature-type" data-tsd-kind="Class">ScormApiWrapper</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="apihandle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> api<wbr>Handle</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L6">api/ScormApiWrapper.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The API (SCORM 1.2) or API_1484_11 (SCORM 2004) object which contains the SCORM Runtime API.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="apiisfound" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> api<wbr>IsFound</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>IsFound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L31">api/ScormApiWrapper.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>True is the wrapper did find the SCORM Runtime API.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="connectionisactive" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> connection<wbr>IsActive</h3>
+					<div class="tsd-signature tsd-kind-icon">connection<wbr>IsActive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L36">api/ScormApiWrapper.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Is the connection is active or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="datacompletionstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> data<wbr>Completion<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>Completion<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L41">api/ScormApiWrapper.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Completion status value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="dataexitstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> data<wbr>Exit<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">data<wbr>Exit<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L46">api/ScormApiWrapper.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Exit mode value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="debugmodeenabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> debug<wbr>Mode<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">debug<wbr>Mode<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L16">api/ScormApiWrapper.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Turn on/off logging in trace().</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="handlecompletionstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Completion<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Completion<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L21">api/ScormApiWrapper.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Should the wrapper handle completion status when running initialize().</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="handleexitmode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Exit<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">handle<wbr>Exit<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L26">api/ScormApiWrapper.ts:26</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Should the wrapper handle exit mode when running terminate().</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scormversion" class="tsd-anchor"></a>
+					<h3>scorm<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">scorm<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L11">api/ScormApiWrapper.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The SCORM Runtime version.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dataget" class="tsd-anchor"></a>
+					<h3>data<wbr>Get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">data<wbr>Get<span class="tsd-signature-symbol">(</span>parameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L366">api/ScormApiWrapper.ts:366</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests information from the LMS.</p>
+								</div>
+								<p>Side effects:</p>
+								<ul>
+									<li>Sets the class property dataCompletionStatus when &quot;cmi.core.lesson_status&quot; (SCORM 1.2) or &quot;cmi.completion_status&quot;
+									(SCORM 2004) is requested.</li>
+									<li>Also sets class property dataExitStatus when &quot;cmi.core.exit&quot; (SCORM 1.2) or &quot;cmi.exit&quot;
+									(SCORM 2004) is requested.</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parameter: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>parameter name of the SCORM data model element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dataset" class="tsd-anchor"></a>
+					<h3>data<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">data<wbr>Set<span class="tsd-signature-symbol">(</span>parameter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L425">api/ScormApiWrapper.ts:425</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tells the LMS to assign the value to the named data model element.
+										Also stores the SCO&#39;s completion status in a variable named
+										ScormApiWrapper.completionStatus. This variable is checked whenever
+									ScormApiWrapper.terminate() is invoked.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parameter: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data model element</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value for the data model element</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findapi" class="tsd-anchor"></a>
+					<h3>find<wbr>Api</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Api<span class="tsd-signature-symbol">(</span>win<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L229">api/ScormApiWrapper.ts:229</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Looks for an object named API (SCORM 1.2) or API_1483_11 (SCORM 2004) in parent and opener windows.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>win: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the window object</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getapi" class="tsd-anchor"></a>
+					<h3>get<wbr>Api</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Api<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L294">api/ScormApiWrapper.ts:294</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Looks for an object named API (SCORM 1.2) or API_1483_11 (SCORM 2004), first in the current window&#39;s frame
+										hierarchy and then, if necessary, in the current window&#39;s opener window
+									hierarchy (if there is an opener window).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getapihandle" class="tsd-anchor"></a>
+					<h3>get<wbr>Api<wbr>Handle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Api<wbr>Handle<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L324">api/ScormApiWrapper.ts:324</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the handle to API (SCORM 1.2) or API_1483_11 (SCORM 2004) object if it was previously set.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcode" class="tsd-anchor"></a>
+					<h3>get<wbr>Code</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Code<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L335">api/ScormApiWrapper.ts:335</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Requests the error code for the current error state from the LMS.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdiagnosticinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Diagnostic<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Diagnostic<wbr>Info<span class="tsd-signature-symbol">(</span>errorCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L596">api/ScormApiWrapper.ts:596</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>&quot;Exists for LMS specific use. It allows the LMS to define additional
+									diagnostic information through the API Instance.&quot;</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errorCode: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getinfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Info<span class="tsd-signature-symbol">(</span>errorCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L570">api/ScormApiWrapper.ts:570</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>&quot;Used by a SCO to request the textual description for the error code
+									specified by the value of [errorCode].&quot;</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>errorCode: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getstatus" class="tsd-anchor"></a>
+					<h3>get<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L476">api/ScormApiWrapper.ts:476</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get completion status value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>Current completion status value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3>initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L66">api/ScormApiWrapper.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tells the LMS to initiate the communication session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isavailable" class="tsd-anchor"></a>
+					<h3>is<wbr>Available</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Available<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L219">api/ScormApiWrapper.ts:219</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>A simple function to allow Flash ExternalInterface to confirm
+									presence of JS wrapper before attempting any LMS communication.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="save" class="tsd-anchor"></a>
+					<h3>save</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">save<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L524">api/ScormApiWrapper.ts:524</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Instructs the LMS to persist all data to this point in the session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setstatus" class="tsd-anchor"></a>
+					<h3>set<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Status<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L498">api/ScormApiWrapper.ts:498</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set completion status.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>completion status we want to set.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="stringtoboolean" class="tsd-anchor"></a>
+					<h3>string<wbr>ToBoolean</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">string<wbr>ToBoolean<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L622">api/ScormApiWrapper.ts:622</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts &#39;boolean strings&#39; into actual valid booleans.
+									(Most values returned from the API are the strings &quot;true&quot; and &quot;false&quot;.)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="terminate" class="tsd-anchor"></a>
+					<h3>terminate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">terminate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L146">api/ScormApiWrapper.ts:146</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tells the LMS to terminate the communication session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="trace" class="tsd-anchor"></a>
+					<h3>trace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/21epub/scorm-ts-api/blob/ecffe96/src/api/ScormApiWrapper.ts#L554">api/ScormApiWrapper.ts:554</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Displays error messages when in debug mode.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>message to be displayed</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="scormapiwrapper.html" class="tsd-kind-icon">Scorm<wbr>Api<wbr>Wrapper</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#apihandle" class="tsd-kind-icon">api<wbr>Handle</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#apiisfound" class="tsd-kind-icon">api<wbr>IsFound</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#connectionisactive" class="tsd-kind-icon">connection<wbr>IsActive</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#datacompletionstatus" class="tsd-kind-icon">data<wbr>Completion<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#dataexitstatus" class="tsd-kind-icon">data<wbr>Exit<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#debugmodeenabled" class="tsd-kind-icon">debug<wbr>Mode<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#handlecompletionstatus" class="tsd-kind-icon">handle<wbr>Completion<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="scormapiwrapper.html#handleexitmode" class="tsd-kind-icon">handle<wbr>Exit<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#scormversion" class="tsd-kind-icon">scorm<wbr>Version</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#dataget" class="tsd-kind-icon">data<wbr>Get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#dataset" class="tsd-kind-icon">data<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#findapi" class="tsd-kind-icon">find<wbr>Api</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getapi" class="tsd-kind-icon">get<wbr>Api</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getapihandle" class="tsd-kind-icon">get<wbr>Api<wbr>Handle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getcode" class="tsd-kind-icon">get<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getdiagnosticinfo" class="tsd-kind-icon">get<wbr>Diagnostic<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getinfo" class="tsd-kind-icon">get<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#getstatus" class="tsd-kind-icon">get<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#initialize" class="tsd-kind-icon">initialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#isavailable" class="tsd-kind-icon">is<wbr>Available</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#save" class="tsd-kind-icon">save</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#setstatus" class="tsd-kind-icon">set<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#stringtoboolean" class="tsd-kind-icon">string<wbr>ToBoolean</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#terminate" class="tsd-kind-icon">terminate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="scormapiwrapper.html#trace" class="tsd-kind-icon">trace</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#compounddatakey" class="tsd-kind-icon">compound<wbr>Data<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#convertmillisecondstoscormtime" class="tsd-kind-icon">convert<wbr>Milliseconds<wbr>ToScorm<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#convertscormtimetomilliseconds" class="tsd-kind-icon">convert<wbr>Scorm<wbr>Time<wbr>ToMilliseconds</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

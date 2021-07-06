@@ -16,7 +16,8 @@ const zeroPad = (intNum: number, intNumDigits: number) => {
   return strTemp
 }
 
-/**  SCORM requires time to be formatted in a specific way
+/**
+ * Convert seconds to SCORM 1.2 time format.
  */
 const convertMillisecondsToScormTime = (
   intTotalMilliseconds: number,

@@ -1,3 +1,6 @@
+/**
+ * Convert SCORM 1.2 time format to seconds.
+ */
 const convertScormTimeToMilliseconds = (time: string) => {
   const perSecond = 1000
   const perMinute = perSecond * 60
