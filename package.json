@@ -10,13 +10,15 @@
     "dist"
   ],
   "scripts": {
-    "build": "typedoc && rm -rf dist && rollup -c",
+    "build": "rm -rf dist && rollup -c",
     "release": "npm version patch && npm run build && npm publish"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-eslint": "^8.0.1",
     "@rollup/plugin-typescript": "^8.2.1",
-    "@umijs/fabric": "^2.6.2",
-    "rollup": "^2.52.3",
-    "typedoc": "^0.21.2"
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "rollup": "^2.53.1",
+    "typedoc": "^0.21.4"
   }
 }
