@@ -1,5 +1,4 @@
-/* eslint-disable default-case */
-class Scorm {
+class Api {
   /**
    * The API (SCORM 1.2) or API_1484_11 (SCORM 2004) object which contains the SCORM Runtime API.
    */
@@ -66,7 +65,7 @@ class Scorm {
   public initialize(): boolean {
     let success: boolean | null = false
     let completionStatus: any
-    const traceMsgPrefix = 'ScormApiWrapper.initialize '
+    const traceMsgPrefix = 'initialize '
 
     this.trace('initialize called.')
 
@@ -161,19 +160,19 @@ class Scorm {
           ) {
             switch (this.scormVersion) {
               case '1.2':
-                this.dataSet('cmi.core.exit', 'suspend')
+                this.setState('cmi.core.exit', 'suspend')
                 break
               case '2004':
-                this.dataSet('cmi.exit', 'suspend')
+                this.setState('cmi.exit', 'suspend')
                 break
             }
           } else {
             switch (this.scormVersion) {
               case '1.2':
-                this.dataSet('cmi.core.exit', 'logout')
+                this.setState('cmi.core.exit', 'logout')
                 break
               case '2004':
-                this.dataSet('cmi.exit', 'normal')
+                this.setState('cmi.exit', 'normal')
                 break
             }
           }
@@ -230,7 +229,7 @@ class Scorm {
     let API = null
     let findAttempts = 0
     const findAttemptLimit = 500
-    const traceMsgPrefix = 'ScormApiWrapper.find'
+    const traceMsgPrefix = 'find'
 
     while (
       !win.API &&
@@ -346,7 +345,7 @@ class Scorm {
           break
       }
     } else {
-      this.trace('ScormApiWrapper.getCode failed: API is null.')
+      this.trace('getCode failed: API is null.')
     }
 
     return code
@@ -363,9 +362,9 @@ class Scorm {
    *
    * @param {string} parameter parameter name of the SCORM data model element
    */
-  public dataGet(parameter: string): string {
+  public getState(parameter: string): string {
     let value = ''
-    const traceMsgPrefix = `ScormApiWrapper.dataGet('${parameter}') `
+    const traceMsgPrefix = `getState('${parameter}') `
 
     if (this.connectionIsActive) {
       const API = this.getApiHandle()
@@ -415,16 +414,15 @@ class Scorm {
 
   /**
    * Tells the LMS to assign the value to the named data model element.
-   * Also stores the SCO's completion status in a variable named
-   * ScormApiWrapper.completionStatus. This variable is checked whenever
-   * ScormApiWrapper.terminate() is invoked.
+   * Also stores the SCO's completion status in a variable named completionStatus.
+   * This variable is checked whenever terminate() is invoked.
    *
    * @param parameter {string} The data model element
    * @param value {string} The value for the data model element
    */
-  public dataSet(parameter: string, value: string): boolean {
-    let success: boolean = false
-    const traceMsgPrefix = `ScormApiWrapper.dataSet('${parameter}') `
+  public setState(parameter: string, value: string): boolean {
+    let success = false
+    const traceMsgPrefix = `setState('${parameter}') `
 
     if (this.connectionIsActive) {
       const API = this.getApiHandle()
@@ -484,7 +482,7 @@ class Scorm {
         break
     }
 
-    const status = this.dataGet(cmi)
+    const status = this.getState(cmi)
 
     return status
   }
@@ -498,7 +496,7 @@ class Scorm {
   public setStatus(status: string): boolean {
     let success: boolean
     let cmi = ''
-    const traceMsgPrefix = 'ScormApiWrapper.setStatus failed'
+    const traceMsgPrefix = 'setStatus failed'
     switch (this.scormVersion) {
       case '1.2':
         cmi = 'cmi.core.lesson_status'
@@ -509,7 +507,7 @@ class Scorm {
     }
 
     if (status !== '') {
-      success = this.dataSet(cmi, status)
+      success = this.setState(cmi, status)
     } else {
       success = false
       this.trace(`${traceMsgPrefix}: status was not specified.`)
@@ -522,8 +520,8 @@ class Scorm {
    * Instructs the LMS to persist all data to this point in the session.
    */
   public save(): boolean {
-    let success: boolean = false
-    const traceMsgPrefix = 'ScormApiWrapper.save failed'
+    let success = false
+    const traceMsgPrefix = 'save failed'
 
     if (this.connectionIsActive) {
       const API = this.getApiHandle()
@@ -581,7 +579,7 @@ class Scorm {
           break
       }
     } else {
-      this.trace('ScormApiWrapper.getInfo failed: API is null.')
+      this.trace('getInfo failed: API is null.')
     }
 
     return String(result)
@@ -607,7 +605,7 @@ class Scorm {
           break
       }
     } else {
-      this.trace('ScormApiWrapper.getDiagnosticInfo failed: API is null.')
+      this.trace('getDiagnosticInfo failed: API is null.')
     }
 
     return String(result)
@@ -637,4 +635,4 @@ class Scorm {
   }
 }
 
-export default Scorm
+export default Api

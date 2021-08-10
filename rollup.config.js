@@ -12,11 +12,13 @@ export default [
         dir: 'dist',
         sourcemap: true,
         format: 'cjs',
+        exports: 'named',
       },
       {
         file: 'dist/index.mjs',
         sourcemap: true,
         format: 'es',
+        exports: 'named',
       },
     ],
     plugins: [
