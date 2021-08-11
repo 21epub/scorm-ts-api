@@ -7,7 +7,7 @@ class Api {
   /**
    * The SCORM Runtime version.
    */
-  public scormVersion: string
+  public version: string
 
   /**
    * Turn on/off logging in trace().
@@ -47,7 +47,7 @@ class Api {
   constructor(debug: boolean) {
     this.debugModeEnabled = debug
 
-    this.scormVersion = ''
+    this.version = ''
     this.apiHandle = null
 
     this.dataCompletionStatus = null
@@ -74,7 +74,7 @@ class Api {
       let errorCode = 0
 
       if (API) {
-        switch (this.scormVersion) {
+        switch (this.version) {
           case '1.2':
             success = this.stringToBoolean(API.LMSInitialize(''))
             break
@@ -158,7 +158,7 @@ class Api {
             completionStatus !== 'completed' &&
             completionStatus !== 'passed'
           ) {
-            switch (this.scormVersion) {
+            switch (this.version) {
               case '1.2':
                 this.setState('cmi.core.exit', 'suspend')
                 break
@@ -167,7 +167,7 @@ class Api {
                 break
             }
           } else {
-            switch (this.scormVersion) {
+            switch (this.version) {
               case '1.2':
                 this.setState('cmi.core.exit', 'logout')
                 break
@@ -178,10 +178,10 @@ class Api {
           }
         }
 
-        success = this.scormVersion === '1.2' ? this.save() : true
+        success = this.version === '1.2' ? this.save() : true
 
         if (success) {
-          switch (this.scormVersion) {
+          switch (this.version) {
             case '1.2':
               success = this.stringToBoolean(API.LMSFinish(''))
               break
@@ -244,8 +244,8 @@ class Api {
       win = win.parent
     }
 
-    if (this.scormVersion) {
-      switch (this.scormVersion) {
+    if (this.version) {
+      switch (this.version) {
         case '2004':
           if (win.API_1484_11) {
             API = win.API_1484_11
@@ -266,15 +266,15 @@ class Api {
           break
       }
     } else if (win.API_1484_11) {
-      this.scormVersion = '2004'
+      this.version = '2004'
       API = win.API_1484_11
     } else if (win.API) {
-      this.scormVersion = '1.2'
+      this.version = '1.2'
       API = win.API
     }
 
     if (API) {
-      this.trace(`${traceMsgPrefix}: API found. Version: ${this.scormVersion}`)
+      this.trace(`${traceMsgPrefix}: API found. Version: ${this.version}`)
       this.trace(`API: ${API}`)
     } else {
       this.trace(
@@ -336,7 +336,7 @@ class Api {
     let code = 0
 
     if (API) {
-      switch (this.scormVersion) {
+      switch (this.version) {
         case '1.2':
           code = parseInt(API.LMSGetLastError(), 10)
           break
@@ -371,7 +371,7 @@ class Api {
       let errorCode = 0
 
       if (API) {
-        switch (this.scormVersion) {
+        switch (this.version) {
           case '1.2':
             value = API.LMSGetValue(parameter)
             break
@@ -429,7 +429,7 @@ class Api {
       let errorCode = 0
 
       if (API) {
-        switch (this.scormVersion) {
+        switch (this.version) {
           case '1.2':
             success = this.stringToBoolean(API.LMSSetValue(parameter, value))
             break
@@ -473,7 +473,7 @@ class Api {
    */
   public getStatus(): string {
     let cmi = ''
-    switch (this.scormVersion) {
+    switch (this.version) {
       case '1.2':
         cmi = 'cmi.core.lesson_status'
         break
@@ -497,7 +497,7 @@ class Api {
     let success: boolean
     let cmi = ''
     const traceMsgPrefix = 'setStatus failed'
-    switch (this.scormVersion) {
+    switch (this.version) {
       case '1.2':
         cmi = 'cmi.core.lesson_status'
         break
@@ -526,7 +526,7 @@ class Api {
     if (this.connectionIsActive) {
       const API = this.getApiHandle()
       if (API) {
-        switch (this.scormVersion) {
+        switch (this.version) {
           case '1.2':
             success = this.stringToBoolean(API.LMSCommit(''))
             break
@@ -570,7 +570,7 @@ class Api {
     let result = ''
 
     if (API) {
-      switch (this.scormVersion) {
+      switch (this.version) {
         case '1.2':
           result = API.LMSGetErrorString(errorCode.toString())
           break
@@ -596,7 +596,7 @@ class Api {
     let result = ''
 
     if (API) {
-      switch (this.scormVersion) {
+      switch (this.version) {
         case '1.2':
           result = API.LMSGetDiagnostic(errorCode)
           break
